@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 //importando componentes
 import Inicio from './inicio';
-import FormAlumnos from './alumnos/Form';
+import Alumnos from './alumnos/PageAlumnos';
 
 //navbar de la aplicacion
 const Dashboard = () => {
@@ -28,7 +28,7 @@ const Dashboard = () => {
                 {/** direcciones */}
                 <Switch>
                     <Route path="/inicio"> <Inicio /> </Route>
-                    <Route path="/alumnos"> <FormAlumnos /> </Route>
+                    <Route path="/alumnos"> <Alumnos /> </Route>
                 </Switch>
             </div>
         </Router>

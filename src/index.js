@@ -5,9 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/navbar';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.Fragment>
     <Navbar />
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById('root')
 );
 
