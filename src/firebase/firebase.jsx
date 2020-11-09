@@ -1,6 +1,7 @@
 //importando firebase
 import firebase from 'firebase/app';
 import 'firebase/firestore';
+import 'firebase/auth';
 
 //constante de configuracion de firebase
 const firebaseConfig = {
@@ -16,3 +17,6 @@ const firebaseConfig = {
 //iniciando conexion con la base
 const fb = firebase.initializeApp(firebaseConfig);
 export const db = fb.firestore();
+export const auth = fb.auth();
+
+export const googleProvider = new firebase.auth.GoogleAuthProvider();
