@@ -4,6 +4,8 @@ import { Link, withRouter } from 'react-router-dom';
 import { useFirebaseApp } from 'reactfire';
 import 'firebase/auth';
 import * as firebase from 'firebase/app';
+//importando las alertas
+import { ToastContainer, toast } from 'react-toastify';
 
 //pantalla de login
 const Login = (props) => {
@@ -27,10 +29,10 @@ const Login = (props) => {
         e.preventDefault();
 
         db.auth().signInWithEmailAndPassword(formUser.email, formUser.password)
-        .then(() => {
-            props.history.push('/inicio')
-        })
-        .catch((error)=>console.log(error));
+            .then(() => {
+                props.history.push('/inicio')
+            })
+            .catch(() => toast.error("No posee una cuenta"));
         setFormUser(initialForm);
     }
     //iniciar sesion con google
@@ -42,6 +44,7 @@ const Login = (props) => {
     }
     return (
         <div className="container h-100">
+            <ToastContainer />
             <div className="py-5">
                 <div className="row justify-content-center h-100">
                     <div className="col-sm-8 align-self-center text-center">
@@ -54,7 +57,8 @@ const Login = (props) => {
                                     <form onSubmit={handleLogin}>
                                         <div className="form-group">
                                             <label>Correo:</label>
-                                            <input type="text" className="form-control"
+                                            <input type="email" className="form-control"
+                                                required
                                                 name="email"
                                                 value={formUser.email}
                                                 onChange={handleChange}
@@ -63,6 +67,7 @@ const Login = (props) => {
                                         <div className="form-group">
                                             <label>Contraseña:</label>
                                             <input type="password" className="form-control"
+                                                required
                                                 name="password"
                                                 value={formUser.password}
                                                 onChange={handleChange}

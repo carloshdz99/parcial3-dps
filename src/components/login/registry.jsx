@@ -55,7 +55,8 @@ const Registry = (props) => {
                                     <form onSubmit={handleRegistry}>
                                         <div className="form-group">
                                             <label>Correo:</label>
-                                            <input type="text" className="form-control"
+                                            <input type="email" className="form-control"
+                                                required
                                                 name="email"
                                                 value={formUser.email}
                                                 onChange={handleChange}
@@ -64,6 +65,7 @@ const Registry = (props) => {
                                         <div className="form-group">
                                             <label>Contraseña:</label>
                                             <input type="password" className="form-control"
+                                                required
                                                 name="password"
                                                 value={formUser.password}
                                                 onChange={handleChange}
