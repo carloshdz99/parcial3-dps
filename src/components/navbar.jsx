@@ -13,6 +13,7 @@ import Inicio from './inicio';
 import Alumnos from './alumnos/PageAlumnos';
 import Login from './login/login';
 import Registry from './login/registry';
+import Al from './alumnos/alumnos';
 //importando a firebase
 import { useFirebaseApp, useUser } from "reactfire";
 import 'firebase/auth';
@@ -51,6 +52,7 @@ const Dashboard = () => {
                                 <Switch>
                                     <Route path="/inicio"> <Inicio /> </Route>
                                     <Route path="/alumnos"> <Alumnos /> </Route>
+                                    <Route path="/prueba"> <Al /></Route>
                                     <Redirect from="/" to="/inicio" />
                                 </Switch>
                             </div>
