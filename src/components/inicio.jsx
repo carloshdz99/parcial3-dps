@@ -6,6 +6,10 @@ const Inicio = () => {
             <div className="text-center">
                 <h3>Parcial practico 3 DPS</h3>
                 <hr/>
+                <h4>Clave A</h4>
+                <br/>
+                <p>Programa que ingresa 5 notas de 3 estudiantes
+                </p>
             </div>
             <div className="row">
                 <div className="col">

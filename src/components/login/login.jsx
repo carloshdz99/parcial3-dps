@@ -78,7 +78,7 @@ const Login = (props) => {
                                 <div className="card-footer">
                                     <p>No tienes cuenta? <Link to="/registro" className="text-primary">Registrate</Link></p>
                                     <br />
-                                    <button className="btn btn-light"
+                                    <button className="btn btn-dark"
                                         onClick={handleLoginGoogle}
                                     >Registrate con Google</button>
                                 </div>

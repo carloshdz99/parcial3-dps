@@ -44,8 +44,14 @@ const Dashboard = () => {
                                             <Link className="nav-link" to="/alumnos">Alumos</Link>
                                         </li>
                                     </ul>
-                                    <p className="text-white"> {user.email} </p>{' '}
-                                    <p onClick={handleSignOut} className="btn btn-outline-light">Cerrar sesion</p>
+                                    <div className="dropdown">
+                                        <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            {user.email}
+                                        </button>
+                                        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <p onClick={handleSignOut} className="dropdown-item">Cerrar sesion</p>
+                                        </div>
+                                    </div>
                                 </nav>
 
                                 {/** direcciones */}

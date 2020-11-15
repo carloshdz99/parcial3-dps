@@ -79,7 +79,7 @@ const Registry = (props) => {
                                     <Link to="/login" className="text-primary">Inicia sesion</Link>
                                     </p>
                                     <br />
-                                    <button className="btn btn-light"
+                                    <button className="btn btn-dark"
                                         onClick={handleLoginGoogle}
                                     >Registrate con Google</button>
                                 </div>
