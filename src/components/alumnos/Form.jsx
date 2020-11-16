@@ -21,6 +21,7 @@ const FormALumnos = ({ contador, handleSubmit, handleChange, alumnosForm, handle
                             <div className="col">
                                 <label>Nota 1:</label>
                                 <input type="number" min="0" max="10" className="form-control"
+                                    step="0.01"
                                     required
                                     name="nota1"
                                     value={alumnosForm.nota1}
@@ -30,6 +31,7 @@ const FormALumnos = ({ contador, handleSubmit, handleChange, alumnosForm, handle
                             <div className="col">
                                 <label>Nota 2:</label>
                                 <input type="number" min="0" max="10" className="form-control"
+                                    step="0.01"
                                     required
                                     name="nota2"
                                     value={alumnosForm.nota2}
@@ -41,6 +43,7 @@ const FormALumnos = ({ contador, handleSubmit, handleChange, alumnosForm, handle
                             <div className="col">
                                 <label>Nota 3:</label>
                                 <input type="number" min="0" max="10" className="form-control"
+                                    step="0.01"
                                     required
                                     name="nota3"
                                     value={alumnosForm.nota3}
@@ -50,6 +53,7 @@ const FormALumnos = ({ contador, handleSubmit, handleChange, alumnosForm, handle
                             <div className="col">
                                 <label>Nota 4:</label>
                                 <input type="number" min="0" max="10" className="form-control"
+                                    step="0.01"
                                     required
                                     name="nota4"
                                     value={alumnosForm.nota4}
@@ -59,6 +63,7 @@ const FormALumnos = ({ contador, handleSubmit, handleChange, alumnosForm, handle
                             <div className="col">
                                 <label>Nota 5:</label>
                                 <input type="number" min="0" max="10" className="form-control"
+                                    step="0.01"
                                     required
                                     name="nota5"
                                     value={alumnosForm.nota5}
